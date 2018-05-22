@@ -1,0 +1,174 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    color: whitesmoke;
+}
+
+
+/*header content flex section*/
+header{
+    display: flex;
+    height: 15vh;
+    width: 100%;
+    background: linear-gradient(rgb(55, 55, 55),black);
+    border-bottom: 5px solid whitesmoke;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    background-image: url(../images/code.jpg);
+    background-size: cover;
+}
+
+div.logo{
+float: left;
+font-family: fantasy;
+color: whitesmoke;
+font-size: 3vw;
+height: 5vw;
+border: solid 5px whitesmoke;
+background: linear-gradient(black, rgb(51, 51, 51));
+padding: .75vw;
+margin-left: 25vw;
+}
+
+div.logo:hover{
+    color: whitesmoke;
+}
+
+.start{
+    background: linear-gradient(black, rgb(51, 51, 51));
+    border: whitesmoke solid 4px;
+    color: whitesmoke;
+    padding: 1vh 2vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5vw;
+    cursor: pointer;
+    margin-left: 20vw;
+
+}
+.start:hover{
+    color: brown;
+    background: linear-gradient(black, rgb(51, 51, 51));
+    border: black solid 4px;
+}
+
+.start:disabled{
+    color: brown;
+    background: linear-gradient(black, rgb(51, 51, 51));
+    border: black solid 4px;
+}
+
+
+
+/*main content flex section*/
+main{
+    height: 75vh;
+    border-block-end-width: 100%;
+    background-image: url(../images/future.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.game{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+div.instructions{
+    flex-direction: left;
+    width: 50vw;
+    align-items: center;
+    padding-top: 5vh;
+    padding-left: 5vw;
+    height: 70vh;
+    
+}
+
+div.input{
+    flex-direction: right;
+    width: 50vw;
+    padding-right: 5vw;
+    padding-top: 5vh;
+    height: 70vh;
+    text-align: center;
+}
+
+
+/*footer section*/
+footer{
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    background: linear-gradient(rgb(55, 55, 55),black);
+    border-top: 5px solid whitesmoke;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: whitesmoke;
+    font-size: 20pt;
+    background-image: url(../images/code.jpg);
+    background-size: cover;
+}
+
+
+
+p{
+    align-items: center;
+    font-size: 1vw;
+}
+
+
+h1{
+font-size: 2vw;
+}
+h1.spacing{
+    font-size: 1.2vw;
+    word-spacing: 5vw;
+}
+p.spacing{
+    font-size: 1vw;
+    word-spacing: 5vw;
+}
+
+
+h2{
+font-size: 2vw;
+padding-left: 50px;
+}
+
+ul{
+    font-size: 1vw;
+}
+
+
+input[type=number]{
+    width: 25%;
+}
+
+
+
+.swal-overlay {
+    background-color: rgba(61, 61, 61, 0.75);
+  }
+
+  .swal-modal {
+    background-color: brown;
+    border: 3px solid whitesmoke;
+  }
+  
+
+  .swal-text {
+      color:whitesmoke;
+      font-size: 2vw;
+  }
+
+  .swal-button {
+    background-color: whitesmoke;
+    color: brown;
+  }

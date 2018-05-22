@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" content="initial-scale=1.0">
+    <title>Code Breaker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<Body>
+    <header>
+        <div class="logo">Code Breaker</div>
+        <div><button class='start' id='start' onclick="startGame();">start</button></div>
+    </header>
+
+    <main>
+        <div class='game'>
+            <div class='instructions'>
+                <h1>Objective:</h1>
+                <p>Guess the randomly generated 4 digit code.</p>
+                <h1>Rules:</h1>
+                <ul>
+                    <li>Each guess must consist of 4 numberic characters.</li>
+                    <li>Numbers may be used more than once!</li>
+                    <li>You win only if your guess is an exact match.</li>
+                    <li>You lose if you fail to guess the code under 10 guesses.</li>
+                    <li>'Y' Indicates a number is in the correct position.</li>
+                    <li>'~' Indicates a number is part of the code, but not in the right position.</li>
+                    <li>'~' Doesn't consider how many times a number exists in the code.</li>
+                    <li>'X' Indicates a number is not part of the code.</li>
+                    <li>Press start to begin.</li>
+                </ul>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2>Good luck and have fun!</h2>
+            </div>
+            <div class='input'>
+                <h2>Please make a guess!</h2>
+                <h2>????</h2>
+                <input type="number" id='guess'>
+                <button id='but' type="button" onclick='main();'>Guess</button>
+                <p id="message">Please press start to begin.</p>
+                <h1 class='spacing'>Guess Results</h1>
+                <p class='spacing' id='result1'></p>
+                <p class='spacing' id='result2'></p>
+                <p class='spacing' id='result3'></p>
+                <p class='spacing' id='result4'></p>
+                <p class='spacing' id='result5'></p>
+                <p class='spacing' id='result6'></p>
+                <p class='spacing' id='result7'></p>
+                <p class='spacing' id='result8'></p>
+                <p class='spacing' id='result9'></p>
+                <p class='spacing' id='result10'></p>
+            </div>
+        </div>
+    </main>
+
+
+    <Footer>
+        <p>© 2018 Josh Guarino</p>
+    </Footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</Body>
+
+</html>
